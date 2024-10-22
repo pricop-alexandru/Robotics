@@ -30,7 +30,29 @@ Componente:
 Breadboard
 Linii de legătură
 
+Codul folosit se gaseste in https://github.com/pricop-alexandru/Robotics/blob/tema-1/tema1.c .
+
+Pasii codului:
+
+- Starea stației este ‘liberă’. Loader-ul este stins, iar led-ul pentru disponibilitate este verde.
+
+- Se apasă butonul pentru start.
+
+- Led-ul pentru disponibilitate se face roșu, iar încărcarea începe prin aprinderea primului LED L1.
+
+- Led-ul 1 clipește timp de 3s, celelalte fiind stinse.
+
+- Dupa încărcarea primului procent de 25% led-ul rămâne aprins și se trece la următorul led, care va începe să clipească.
+
+- La finalizarea încărcării toate led-urile vor clipi simultan de 3 ori, iar apoi se vor stinge, pentru a semnaliza finalizarea procesului.
+
+- Led-ul pentru disponibilitate se face verde.
+
+- Dacă oricând de la pornirea încărcării până la finalizarea acesteia este apăsat lung (min 1s) butonul de stop, încărcarea se întrerupe prin animația de final (toate led-urile clipesc de 3 ori), iar led-ul pentru disponibilitate devine verde.
 
 <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare2.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare3.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare4.jpeg" width="300">
 
+# 5. Finalizarea experimentului:
+
 https://youtube.com/shorts/5vkmwre_HtM?feature=share
+(videoclipul poate parea neclar din cauza contrastului de lumina)
