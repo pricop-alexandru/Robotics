@@ -19,7 +19,7 @@ framework = arduino
 upload_protocol = urclock
 board_build.f_cpu = 12000000L
 ```
-![](https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare1.jpeg | width = 100)
+![](https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare1.jpeg){: width="50%"}
 
 # 4. Programarea experimentului:
 Componente:
