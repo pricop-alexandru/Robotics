@@ -19,7 +19,7 @@ framework = arduino
 upload_protocol = urclock
 board_build.f_cpu = 12000000L
 ```
-<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare1.jpeg" width="200">
+<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare1.jpeg" width="300">
 
 # 4. Programarea experimentului:
 Componente:
@@ -31,7 +31,5 @@ Breadboard
 Linii de legătură
 
 
-<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare2.jpeg" width="200">
-<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare3.jpeg" width="200">
-<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare4.jpeg" width="200">
+<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare2.jpeg" width="200"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare3.jpeg" width="200> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare4.jpeg" width="200">
 https://youtube.com/shorts/5vkmwre_HtM?feature=share
