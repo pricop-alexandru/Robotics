@@ -3,7 +3,7 @@
  În această temă trebuie să simulăm o stație de încărcare pentru un vehicul electric, folosind mai multe LED-uri și butoane. În cadrul acestui task trebuie să ținem cont de stările butonului și să folosim debouncing, dar și să coordonăm toate componentele ca într-un scenariu din viața reală.
 
 # 2. Simularea temei
- ![alt text](https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/simularewokwi2.png?raw=true)
+ ![alt text](https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/simularewokwi2.png?raw=true)
   Aceasta este simularea temei in TinkerCAD, care simuleaza circuitul in felul urmator:
  - Led-ul RGB reprezintă disponibilitatea stației. Dacă stația este liberă led-ul va fi verde, iar dacă stația este ocupată se va face roșu.
  - Led-urile simple reprezintă gradul de încărcare al bateriei, pe care îl vom simula printr-un loader progresiv (L1 = 25%, L2 = 50%, L3 = 75%, L4 = 100%). Loader-ul se încărca prin aprinderea succesivă a led-urilor, la un interval fix de 3s. LED-ul care semnifică procentul curent de încărcare va avea starea de clipire, LED-urile din urma lui fiind aprinse continuu, iar celelalte stinse.
