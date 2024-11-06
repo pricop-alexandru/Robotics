@@ -59,4 +59,4 @@ Pasii codului:
 
 # 5. Finalizarea experimentului:
 
-https://studio.youtube.com/video/zTPQyuWwz-4/edit
+[Videoclip Venerabil cu Programul](https://studio.youtube.com/video/zTPQyuWwz-4/edit)
