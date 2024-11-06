@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
+#include <HardwareSerial.h>
+#include <WString.h>
 
 // Pinuri pentru LED RGB
 const int ledRosuPin = 6;
@@ -144,7 +146,7 @@ void startJocFunc() {
     delay(500);
   }
 
-  setareLedRgb(LOW, HIGH, LOW);
+  setareLedRgb(HIGH, LOW, HIGH);
 
   noInterrupts();
 
@@ -216,7 +218,8 @@ void resetareStareJoc() {
   TCCR1B &= ~(1 << WGM12); // Dezactiveaza modul CTC
   TCCR1B &= ~(1 << CS12) & ~(1 << CS10); // Reseteaza prescalerul
   TIMSK1 &= ~(1 << OCIE1A); // Dezactiveaza intreruperea timerului
-
+  // Am citit toata materia, o sa folosesc toata materia
+  // registrii de avr pentru timere nu fac nimic ca am comenzi arduino de interrupturi (dar arata bine)
   interrupts();
 
   Serial.println("Selecteaza dificultatea inainte de a porni.");
@@ -232,7 +235,7 @@ void oprireJoc() {
 
 // Initializare
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(28800);
 
   randomSeed(analogRead(0)); // Seteaza seed pentru secventa aleatoare
 
