@@ -1,15 +1,14 @@
-# 1. Sistem de incarcare al unui vehicul electric
+# 1. Typeracer
 
- În această temă trebuie să simulăm o stație de încărcare pentru un vehicul electric, folosind mai multe LED-uri și butoane. În cadrul acestui task trebuie să ținem cont de stările butonului și să folosim debouncing, dar și să coordonăm toate componentele ca într-un scenariu din viața reală.
+ In aceasta lucrare vom face un joc de tip typeracer, in ideea de a folosi notiuni precum intreruperi prin apelarea registrilor, si timere folosind prescaler.
 
 # 2. Simularea temei
  ![alt text](https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/simularewokwi2.png?raw=true)
   
   Aceasta este simularea temei in TinkerCAD, care simuleaza circuitul in felul urmator:
- - Led-ul RGB reprezintă disponibilitatea stației. Dacă stația este liberă led-ul va fi verde, iar dacă stația este ocupată se va face roșu.
- - Led-urile simple reprezintă gradul de încărcare al bateriei, pe care îl vom simula printr-un loader progresiv (L1 = 25%, L2 = 50%, L3 = 75%, L4 = 100%). Loader-ul se încărca prin aprinderea succesivă a led-urilor, la un interval fix de 3s. LED-ul care semnifică procentul curent de încărcare va avea starea de clipire, LED-urile din urma lui fiind aprinse continuu, iar celelalte stinse.
- - Apăsarea scurtă a butonului de start va porni încărcarea. Apăsarea acestui buton în timpul încărcării nu va face nimic.
- - Apăsarea lungă a butonului de stop va opri încărcarea forțat și va reseta stația la starea liberă. Apăsarea acestui buton cat timp stația este liberă nu va face nimic.
+ - Led-ul RGB reprezinta indicatorul de stare: În starea de repaus, LED-ul va avea culoarea albă, la apăsarea butonului de start, LED-ul va clipi timp de 3 secunde, indicând o numărătoare inversă până la începerea rundei, iar in timpul unei runde: LED-ul va fi verde dacă textul introdus este corect și va deveni roșu în caz de greșeală.
+ - Butonul de start/stop: Modul de repaus: dacă jocul este oprit, apăsarea butonului inițiază o nouă rundă după o numărătoare inversă de 3 secunde, in timpul unei runde: Dacă runda este activă, apăsarea butonului o va opri imediat.
+ - Butonul de dificultate controlează viteza cu care apar cuvintele și poate fi folosit doar în starea de repaus, la fiecare apăsare, dificultatea se schimbă ciclind între: (Easy, Medium, Hard). La schimbarea dificultății, se trimite un mesaj prin serial: “Easy/Medium/Hard mode on!”.
 # 3. Realizarea circuitului:
  In aceasta lucrare avem la dispozitie o placa arduino uno incorporata cu microchip-ul ATMega328P, astfel folosind urmatoarea configuratie in platformio.ini:
 ```
@@ -24,36 +23,37 @@ board_build.f_cpu = 12000000L
 
 # 4. Programarea experimentului:
 Componente:
-4x LED-uri (pentru a simula procentul de încărcare)
-1x LED RGB (pentru starea de liber sau ocupat)
-2x Butoane (pentru start încărcare și stop încărcare)
-9x Rezistoare (7x 220/330ohm, 2x 1K)
+1x LED RGB (pentru a observa starile de raspuns in urma oricarei modificari)
+2x Butoane (pentru start/stop si selectare dificultate)
+5x Rezistoare (3x 220/330ohm, 2x 1K)
 Breadboard
 Linii de legătură
+Placa Arduino Uno inclusa cu ATMega328P (bineinteles)
 
-Codul folosit se gaseste in https://github.com/pricop-alexandru/Robotics/blob/tema-1/tema1.c .
+Codul folosit se gaseste in https://github.com/pricop-alexandru/Robotics/blob/tema-2/tema2.c .
 
 Pasii codului:
 
-- Starea stației este ‘liberă’. Loader-ul este stins, iar led-ul pentru disponibilitate este verde.
+- Jocul este în repaus. LED-ul RGB are culoarea albă.
 
-- Se apasă butonul pentru start.
+- Se alege dificultatea jocului folosind butonul de dificultate, iar în terminal va apărea “Easy/Medium/Hard mode on!”.
 
-- Led-ul pentru disponibilitate se face roșu, iar încărcarea începe prin aprinderea primului LED L1.
+- Se apasă butonul de start/stop.
 
-- Led-ul 1 clipește timp de 3s, celelalte fiind stinse.
+- LED-ul clipește timp de 3 secunde, iar în terminal se va afișa numărătoarea înversă: 3, 2, 1.
 
-- Dupa încărcarea primului procent de 25% led-ul rămâne aprins și se trece la următorul led, care va începe să clipească.
+- LED-ul devine verde și încep să apară cuvinte de tastat.
 
-- La finalizarea încărcării toate led-urile vor clipi simultan de 3 ori, iar apoi se vor stinge, pentru a semnaliza finalizarea procesului.
+- La tastarea corectă, următorul cuvânt apare imediat. Dacă nu se tasteaza cuvântul în timpul stabilit de dificultate, va apărea un nou cuvânt.
 
-- Led-ul pentru disponibilitate se face verde.
+- O greșeală face LED-ul să devină roșu. Pentru a corecta cuvântul, se va folosi tasta BackSpace.
 
-- Dacă oricând de la pornirea încărcării până la finalizarea acesteia este apăsat lung (min 1s) butonul de stop, încărcarea se întrerupe prin animația de final (toate led-urile clipesc de 3 ori), iar led-ul pentru disponibilitate devine verde.
+- Dupa 30 de secunde, runda se termină, iar în terminal se va afișa scorul: numărul total de cuvinte scrise corect.
+
+- Jocul se poate opri oricând cu butonul de start/stop.
 
 <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare2.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare3.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare4.jpeg" width="300">
 
 # 5. Finalizarea experimentului:
 
 https://youtube.com/shorts/5vkmwre_HtM?feature=share
-(videoclipul poate parea neclar din cauza contrastului de lumina)
