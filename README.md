@@ -17,8 +17,11 @@ platform = atmelavr
 board = ATmega328P
 framework = arduino
 upload_protocol = urclock
-board_build.f_cpu = 12000000L
+board_build.f_cpu = 16000000L
+monitor_speed = 28800
+monitor_echo = true
 ```
+A se nota faptul ca setam si baudrate-ul cu monitor_speed la viteza necesara, si viteza de cpu al placii ATmega328P este de 16M.
 <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/pozatyperacer1.jpeg" width="300">
 
 # 4. Programarea experimentului:
