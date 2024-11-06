@@ -19,7 +19,7 @@ framework = arduino
 upload_protocol = urclock
 board_build.f_cpu = 12000000L
 ```
-<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare1.jpeg" width="300">
+<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/pozatyperacer1.jpeg" width="300">
 
 # 4. Programarea experimentului:
 Componente:
@@ -52,7 +52,7 @@ Pasii codului:
 
 - Jocul se poate opri oricând cu butonul de start/stop.
 
-<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare2.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare3.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-1/images/pozaincarcare4.jpeg" width="300">
+<img src="https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/pozatyperacer2.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/pozatyperacer3.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/pozatyperacer4.jpeg" width="300">
 
 # 5. Finalizarea experimentului:
 
