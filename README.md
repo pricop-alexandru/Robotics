@@ -59,4 +59,4 @@ Pasii codului:
 
 # 5. Finalizarea experimentului:
 
-Videoclipul in curand.
+https://studio.youtube.com/video/zTPQyuWwz-4/edit
