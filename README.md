@@ -3,7 +3,7 @@
  In aceasta lucrare vom face un joc de tip reflex, in care folosim comunicarea a 2 placi de arduino cu microchipul ATMega328P, folosind SPI si o comunicare de tip master si slave. Fiecare jucator va avea butoane si LED-uri proprii, iar jocul se va desfasura in mai multe runde. Scopul fiecarui jucator este sa apese cat mai rapid butonul care corespunde culorii afisate pe LED-ul RGB al echipei sale. Punctajul fiecarui jucator va fi afisat pe un ecran LCD si se va actualiza pe parcursul jocului. La finalul jocului, jucatorul cu cel mai mare punctaj este declarat castigator.
 
 # 2. Simularea temei
- ![Simularea Wokwi:](https://github.com/pricop-alexandru/Robotics/blob/tema-2/images/simulrarewokwi3.png?raw=true)
+ ![Simularea Wokwi:](https://github.com/pricop-alexandru/Robotics/blob/tema-3/images/simulrarewokwi3.png?raw=true)
   
   Aceasta este simularea temei in Wokwi, care simuleaza circuitul in felul urmator:
 A. Jocul pornește cu afișarea unui mesaj de bun venit pe LCD. Apăsarea unui buton declanșează startul jocului.
