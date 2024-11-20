@@ -76,7 +76,8 @@ Componente:
 Linii de legătură (foarte multe)
 2 placi Arduino Uno cu ATMega328P, de la 2 kit-uri
 
-Codul folosit se gaseste in https://github.com/pricop-alexandru/Robotics/blob/tema-3/master.cpp , respectiv https://github.com/pricop-alexandru/Robotics/blob/tema-3/slave.cpp.
+Codul folosit se gaseste in https://github.com/pricop-alexandru/Robotics/blob/tema-3/master.cpp ,
+respectiv https://github.com/pricop-alexandru/Robotics/blob/tema-3/slave.cpp.
 
 <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-3/images/pozaspeedgame2.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-3/images/pozaspeedgame3.jpeg" width="300"> <img src="https://github.com/pricop-alexandru/Robotics/blob/tema-3/images/pozaspeedgame4.jpeg" width="300">
 
