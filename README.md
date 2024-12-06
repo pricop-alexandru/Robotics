@@ -1,4 +1,4 @@
-# Proiect: **
+# Proiect: Home Appliance Monitoring System
 
  
 
