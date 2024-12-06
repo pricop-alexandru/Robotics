@@ -1,4 +1,4 @@
-# Proiect: Home Appliance Energy Monitoring System
+# Proiect: Home Appliance Monitoring System
 
  
 
