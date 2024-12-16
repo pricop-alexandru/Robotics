@@ -3,6 +3,7 @@
 
 # 1. Planning / Components
 For the system, we will be using the following:
+
  A. Arduino board with ATMega328P microcontroller
   - [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42743-ATmega324P_Datasheet.pdf)
 
