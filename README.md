@@ -34,7 +34,57 @@ For the system, we will be using the following:
 # 2. Hardware scheme
 <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/schematicproiect.png" width=600>
 
+This shows shortly how the basic structure of how the circuit will be connected, with the rough idea that the buttons will communicate through their scopes of action via code.
+
 # 3. Functionality
+
+<img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/simulareproiect.png" width=600>
+
+This is the detailed schematic of the circuit, containing the following connections of the system:
+
+1. Arduino UNO (ATMega328P, 16MHz)
+- SCL (A5) to SCL pin on the 16x2 I2C LCD
+- SDA (A4) to SDA pin on the 16x2 I2C LCD
+- 5V to VCC pin on the 16x2 I2C LCD
+- 5V to VCC pin on the Relay Module
+- 5V to NO4 pin on the Relay Module
+- GND to GND pin on the Pushbutton
+- GND to Pin 2 on the Rocker Switch
+- GND to GND pin on the 16x2 I2C LCD
+- GND to GND pin on the Relay Module
+- GND to negative terminal of the Bulb
+- D3 to Pin 2 (in) on the Pushbutton
+- D4 to Pin 1 on the Rocker Switch
+- D5 to IN4 pin on the Relay Module
+
+2. 16x2 I2C LCD
+- SCL to SCL (A5) on the Arduino UNO
+- SDA to SDA (A4) on the Arduino UNO
+- VCC to 5V on the Arduino UNO
+- GND to GND on the Arduino UNO
+
+3. Relay 4 Channel 5v Module
+- COM4 to positive terminal of the Bulb
+- NO4 to 5V on the Arduino UNO
+- VCC to 5V on the Arduino UNO
+- GND to GND on the Arduino UNO
+- IN4 to D5 on the Arduino UNO
+
+4. Pushbutton
+- Pin 3 (out) to GND on the Arduino UNO
+- Pin 2 (in) to D3 on the Arduino UNO
+
+5. Rocker Switch
+- Pin 2 to GND on the Arduino UNO
+- Pin 1 to D4 on the Arduino UNO
+
+6. Bulb
+- Positive terminal to COM4 on the Relay Module
+- Negative terminal to GND on the Arduino UNO
+
+Flow: 
+
+The Arduino checks every second the states of the Switch and the Pushbutton. It displays every second the on/off state of the electrical device(s) connected to the relay, and the runtime in hh.dd.ss, on the LCD, via I2C connection. The Lightbulb is charged by the relay which responds to the rocker switch. The LCD's lifetime can be preserved by turning it off or on through the pushbutton. All the readings are measured in real time through the microcontroller's built-in timer.
 
 # 4. Coding
 
