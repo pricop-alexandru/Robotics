@@ -5,23 +5,29 @@
 For the system, we will be using the following:
  A. Arduino board with ATMega328P microcontroller
   - [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42743-ATmega324P_Datasheet.pdf)
+
  B. I2C LCD Display
   - Standard 16x2 Liquid Crystal Display.
   - Display mode: STN
   - Connected through an I2C serial adapter board module ( [I2C information](https://en.wikipedia.org/wiki/I²C) )
   [](https://m.media-amazon.com/images/I/710mTJUftIL._SL1500_.jpg)
+
  C. Relay
   - The Relay is a digital normally open switch that controls a relay capable of switching much higher voltages and currents than your normal Arduino boards. When the relay is switched on, the Bulb will light up and the relay will allow current to flow.
   - Relay Maximum output: DC 30V/10A, AC 250V/10A
   - 4 Channel Relay Module with Optocoupler LOW Level Trigger expansion board, which is compatible with arduino
   [](https://www.voltaat.com/cdn/shop/products/voltaat-4-channel-relay-module-3856338223206.jpg?v=1628484133]
+
  D. Rocker switch
   - 2 pins, one for ground, one for GPIO
   [](https://media.cablematic.com/__sized__/images_1000/tg11800-01-thumbnail-1080x1080-70.jpg)
+
  E. Pushbutton
   - 4 pin button found in standard circuitry kits
+  - 
  F. 8W Lightbulb
   - Lower consumption is prefered
+  - 
 # 2. Hardware scheme
 
 # 3. Functionality
