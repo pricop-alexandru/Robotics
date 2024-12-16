@@ -11,12 +11,14 @@ For the system, we will be using the following:
   - Standard 16x2 Liquid Crystal Display.
   - Display mode: STN
   - Connected through an I2C serial adapter board module ( [I2C information](https://en.wikipedia.org/wiki/I²C) )
+  - [Buy link](https://www.bitmi.ro/electronica/modul-interfata-i2c-pentru-lcd1602-10456.html)
   <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/adapteri2c.jpg" width=200>
 
  C. Relay
   - The Relay is a digital normally open switch that controls a relay capable of switching much higher voltages and currents than your normal Arduino boards. When the relay is switched on, the Bulb will light up and the relay will allow current to flow.
   - Relay Maximum output: DC 30V/10A, AC 250V/10A
   - 4 Channel Relay Module with Optocoupler LOW Level Trigger expansion board, which is compatible with arduino
+  - [Buy link](https://www.bitmi.ro/modul-releu-4-canale-cu-optocuplor-5v-low-level-10494.html)
   <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/relay.jpg" width=300>
 
  D. Rocker switch
