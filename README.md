@@ -10,7 +10,7 @@ For the system, we will be using the following:
  B. I2C LCD Display
   - Standard 16x2 Liquid Crystal Display.
   - Display mode: STN
-  - Connected through an I2C serial adapter board module ( [I2C information](https://en.wikipedia.org/wiki/I²C)
+  - Connected through an I2C serial adapter board module ( [I2C information](https://en.wikipedia.org/wiki/I²C) )
   <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/adapteri2c.jpg" width=200>
 
  C. Relay
