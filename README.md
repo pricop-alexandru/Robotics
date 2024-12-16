@@ -9,18 +9,18 @@ For the system, we will be using the following:
  B. I2C LCD Display
   - Standard 16x2 Liquid Crystal Display.
   - Display mode: STN
-  - Connected through an I2C serial adapter board module ( [I2C information](https://en.wikipedia.org/wiki/I²C) )
-  <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/adapteri2c.jpg?raw=true" width=50)
+  - Connected through an I2C serial adapter board module ( [I2C information](https://en.wikipedia.org/wiki/I²C)
+  <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/adapteri2c.jpg" width=150>
 
  C. Relay
   - The Relay is a digital normally open switch that controls a relay capable of switching much higher voltages and currents than your normal Arduino boards. When the relay is switched on, the Bulb will light up and the relay will allow current to flow.
   - Relay Maximum output: DC 30V/10A, AC 250V/10A
   - 4 Channel Relay Module with Optocoupler LOW Level Trigger expansion board, which is compatible with arduino
-  <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/relay.jpg?raw=true" width=100>
+  <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/relay.jpg" width=300>
 
  D. Rocker switch
   - 2 pins, one for ground, one for GPIO
-  ![](https://github.com/pricop-alexandru/Robotics/blob/proiect/images/butonswitch.jpg?raw=true)
+  <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/butonswitch.jpg" width=200>
 
  E. Pushbutton
   - 4 pin button found in standard circuitry kits
@@ -29,7 +29,7 @@ For the system, we will be using the following:
   - Lower consumption is prefered
   - 
 # 2. Hardware scheme
-![hardware scheme](https://github.com/pricop-alexandru/Robotics/blob/proiect/images/schematicproiect.png?raw=true)
+<img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/schematicproiect.png" width=300>
 # 3. Functionality
 
 # 4. Coding
