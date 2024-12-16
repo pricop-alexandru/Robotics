@@ -27,7 +27,7 @@ For the system, we will be using the following:
   - 
  F. 8W Lightbulb
   - Lower consumption is prefered
-  - 
+
 # 2. Hardware scheme
 <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/schematicproiect.png" width=600>
 
