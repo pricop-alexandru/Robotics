@@ -42,9 +42,7 @@ For the system, we will be using the following:
 
 This shows shortly how the basic structure of how the circuit will be connected, with the rough idea that the buttons will communicate through their scopes of action via code. In essence, any piece of indoor electricity could be connected simultaneously to the relay and programmed to be monitored by the microcontroller. 
 
-<img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/setupcomplet.jpeg" width=300>
-<img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/setupoutlet.jpeg" width=300>
-<img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/setupbody.jpeg" width=300>
+<img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/setupcomplet.jpeg" width=300> <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/setupoutlet.jpeg" width=300> <img src="https://github.com/pricop-alexandru/Robotics/blob/proiect/images/setupbody.jpeg" width=300>
 
 Additionally, as seen, the socketting should be done after ensuring the wires are fixed in place and the connections secured. The entire setup will be placed in a DIY case with certain holes for the power socket and the rocker switch. 
 
