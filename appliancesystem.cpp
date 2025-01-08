@@ -55,7 +55,7 @@ void updateLCD() {
 
 void setup() {
   // Initialize the LCD
-  lcd.init(); // Specify dimensions of the LCD
+  lcd.init();
   lcd.backlight();
 
   // Initialize pins
