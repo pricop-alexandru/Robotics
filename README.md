@@ -228,5 +228,6 @@ String formatTime(unsigned long milliseconds) {
 ```
 # 5. Final
 This helps out in any pursuit of tinkering around the house with any electrical device you want to keep track of in terms of usage. The project itself is a mere basic structure that could be modified to the liking, added more electrical devices with each their own switch and timekeeping, with minimal investments and extra efforts in terms of code and circuit. This can be efficiently utilized to measure how long home appliances are consuming, and even set thresholds to turn them off automatically after a while. 
+
 [Alas, here is the working system video.](https://www.youtube.com/shorts/Kw7EYmBHmVk)
 
